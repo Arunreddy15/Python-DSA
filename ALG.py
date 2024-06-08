@@ -5,7 +5,7 @@ def bubble_sort(arr):
             if arr[j] > arr[j+1]:
                 arr[j], arr[j+1] = arr[j+1], arr[j]
     return arr
-
+# ---------------------
 def selection_sort(arr):
     n = len(arr)
     for i in range(n):
@@ -15,7 +15,7 @@ def selection_sort(arr):
                 min_idx = j
         arr[i], arr[min_idx] = arr[min_idx], arr[i]
     return arr
-
+# -----------------------
 def insertion_sort(arr):
     for i in range(1, len(arr)):
         key = arr[i]
@@ -59,8 +59,5 @@ def quick_sort(arr):
 
 
 arr=[1,2,4,2,55,7,2,0]
-# arr.sort()
-# print(arr)
-print(bubble_sort(arr))
-# print(quick_sort(arr))
+
 
